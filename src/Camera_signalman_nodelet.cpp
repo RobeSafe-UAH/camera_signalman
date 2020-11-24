@@ -141,7 +141,7 @@ namespace camera_signalman {
         std::string cameraTopic = frameIDsAndTopicsMap_[frameID];
 
         ROS_DEBUG("[camera_signalman] Received image of frame_id %s from topic %s", frameID.c_str(), cameraTopic.c_str());
-
+        publisher_.publish(imageMsg);
         if (frameID == currentFrameID_){
             publisher_.publish(imageMsg);
 

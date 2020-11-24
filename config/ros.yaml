@@ -1,11 +1,17 @@
 subscribers:
 
   camera_topics: [
-    "/cv_camera/image_raw"
+    "/stereo_center/left/image",
+    "/stereo_zoom/left/image",
+    "/stereo_center/right/image",
+    "/stereo_zoom/right/image"
   ]
 
   camera_frame_ids: [
-    "camera",
+    "stereo_center_left",
+    "stereo_zoom_left",
+    "stereo_center_right",
+    "stereo_zoom_right"
   ]
 
   queue_size: 1
